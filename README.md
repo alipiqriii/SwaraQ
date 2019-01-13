@@ -22,4 +22,4 @@ SwaraQ BlockChain :
     3. setting truffle.js dengan network host dan port sesuai dari ganache
     4. setting database di Server.js
     5. compile & migrate smart contract dengan perintah truffle-migrate –compile-all –reset
-    6. start web SwaraQ dengan perintah npm-start (sebelum start pastikan DB MySQL sudah jalan)
+    6. start web SwaraQ dengan perintah npm start (sebelum start pastikan DB MySQL sudah jalan)
