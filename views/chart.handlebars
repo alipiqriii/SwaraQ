@@ -1,0 +1,18 @@
+  <header class="py-1 bg-light">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <p class="lead" style="margin-left: 10%">Pemilihan Event Suara</p>
+        </div>
+        <button class="btn btn-lg button2" style="margin-right: 10px" onclick="myFunction(4)">Chart</button>
+    </nav>
+  </header>
+<script type="text/javascript">
+    setInterval('reloadchart(3)', 5000);
+</script>
+ <div id="address">
+    <input type="hidden" id="voter-signature" name="signature" value="" />
+    <input type="hidden" id="candidate-1" name="signature" value="" />
+    <input type="hidden" id="candidate-2" name="signature" value="" />
+    <input type="hidden" id="candidate-3" name="signature" value="" />
+  </div>
+<canvas id="myChart"></canvas>

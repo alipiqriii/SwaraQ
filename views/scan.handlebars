@@ -1,0 +1,37 @@
+
+<!-- Header -->
+<script>
+var url_string = window.location.href; //window.location.href
+var url = new URL(url_string);
+var ID = url.searchParams.get("ID");
+localStorage.setItem("EventID",ID)
+console.log(ID);
+</script>
+  <header class="py-1 bg-light">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <p class="lead" style="margin-left: 10%">Pemilihan Event Suara</p>
+        </div>
+        <button class="btn btn-lg button2" style="margin-right: 10px" onclick="myFunction(4)">Chart</button>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="bod tengah">
+  <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
+  <canvas id="canvas" hidden></canvas>
+  <div id="output" hidden>
+    <div id="outputMessage">No QR code detected.</div>
+    <div hidden><b>Data:</b> <span id="outputData"></span></div>
+  </div>
+  </div>
+
+</div>
+<script>
+      function myFunction(i){
+        if (i == 1 ) window.location.href=("profile/Tampil-1.html")
+        else if (i == 2) window.location.href=("profile/Tampil-2.html")
+        else if (i == 3) window.location.href=("profile/Tampil-3.html")
+        else if (i == 4) window.location.href = "http://localhost:3000/EventID="+localStorage.getItem("EventID")+"/Chart";
+      }
+</script>

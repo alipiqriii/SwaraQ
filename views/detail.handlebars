@@ -1,0 +1,69 @@
+    <!-- Header -->
+  <header class="py-1 bg-light">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <p class="lead" style="margin-left: 10%">Pemilihan Event Suara</p>
+        </div>
+        <button class="btn btn-lg button2" style="margin-right: 10px" onclick="myFunction(4)">Chart</button>
+    </nav>
+  </header>
+  <div class="container">
+      <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row">
+        {{#each Calon_data}}
+        
+        <div  class="col-lg-6 text-left">
+          <h3><b>Kandidat #{{this.NomorPasangan}}</b></h3>
+          <div class="box-gambar">
+            <img src="http://localhost/SwaraQWeb/assets/images/{{this.Foto}}" alt="paslon-urut-1" style="width: 320px; height: 192px;">
+          </div>    
+          <br>
+          <p class="card-text">
+            <h3><b> {{this.NamaKetua}} </b></h3>
+            <p style="color: grey; padding-bottom: 5px;">Calon Ketua</p>    
+          </p>
+
+          <p class="card-text">
+            <h3><b>{{this.NamaWakil}}</b></h3>
+            <p style="color: grey;">Calon Wakil</p>
+          </p>
+          </div>
+
+
+          <div class="col-lg-6 text-left">
+            <div class="letak-vis">
+              <h3><b>Visi : </b></h3>
+              <p class="desk">Lorem ipsum dolor sit amet, ea sea elit deterruisset, et vim nullam delenit platonem. Ne vide ipsum corrumpit eum, mea vide fugit ut. Porro timeam comprehensam id nam. Sed scriptorem ullamcorper ad.</p>
+            </div>
+            
+          <div class="letak-mis">
+            <h3><b>Misi : </b></h3>
+            <p class="desk">1. Volumus iracundia mea in, mazim voluptaria te duo.</p>
+            <p class="desk">2. Eam malis habemus quaestio ne. </p>
+            <p class="desk">3. dictas vocibus ea. Te nec prima elitr, ancillae singulis recusabo per et.</p>
+          </div>
+
+          
+                
+          <!-- <div class="letak-topil">
+            <button class="btn btn-lg button button2 w3-hover" style="margin-right: 2cm">Pilih Kandidat</button>
+          </div> -->
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br><br>
+                <h3><b>Berkas Detail</b></h3>
+                <embed src="http://localhost/SwaraQWeb/assets/berkas/{{this.DetailBerkas}}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </div>
+        {{/each}}
+      </div>
+      <script>
+      function myFunction(i){
+        if (i == 1 ) window.location.href=("profile/Tampil-1.html")
+        else if (i == 2) window.location.href=("profile/Tampil-2.html")
+        else if (i == 3) window.location.href=("profile/Tampil-3.html")
+        else if (i == 4) window.location.href = "http://localhost:3000/EventID="+localStorage.getItem("EventID")+"/Chart";
+      }
+</script>

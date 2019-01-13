@@ -1,0 +1,34 @@
+
+<!-- Header -->
+  <header class="py-1 bg-light">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <p class="lead" style="margin-left: 10%">Pemilihan Event Suara</p>
+        </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+  <div class="row text-center row-eq-height" style="height: 15px">
+  </div>
+  <!-- Page Content -->
+  <div class="row text-center row-eq-height">
+	{{#each Event_data}}
+	
+	
+		<div class="col-lg-4 col-md-7 mb-5">
+			<div class="card">
+			<h5 class="card-header">{{this.Tipe}}</h5>
+			<div class="card-body">
+				<h5 class="card-title">
+					Lokasi : {{this.Lokasi}} <br>
+					Tahun  : {{this.Tahun}}
+					
+				</h5>
+				<a href="Pemilihan?ID={{this.ID}}" class="btn button2 text-white">Masuk Ke Pemilihan</a>
+			</div>
+			</div>
+		</div>
+	{{/each}}
+</div>
+</div>

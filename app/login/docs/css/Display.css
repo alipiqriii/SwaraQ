@@ -1,0 +1,227 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+ html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 800;
+    height: 100%;
+  }
+
+  #container{
+    min-height:100%;
+    position:relative;
+  }
+
+  .bod {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    color: #333;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .tengah{
+    position: relative;
+    bottom: 450px;
+  }
+  
+  .container-2{
+    position: relative;
+    min-height: 100%;
+  }
+  
+  .desk{
+    font-weight: 300;
+  }
+  
+  nav{
+    border-bottom: 3px solid #c9c9c9;
+    font-weight: 800;
+  }
+  
+  header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+  footer{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    background-color: #993333;
+    color: white;
+  }
+  
+  .button2{
+    background-color: #ff6666;
+    border-radius: 140px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  .button2:hover{
+    background-color: #dd5252;
+  }
+  
+  .lead{
+    font-size: 25px;
+    font-weight: 800;
+    color: grey;
+  }
+  
+  .avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .naving{
+    font-weight: 300;
+  }
+  
+  .navbar-text{
+    font-weight: 300;
+  }
+  
+  .barvertical{
+    vertical-align: middle;
+    width: 3px;
+    height: 45px;
+  }
+  
+  .letak-vis{
+    position: relative;
+    top: 140px;
+    right: 80px;
+  }
+  
+  .letak-mis{
+    position: relative;
+    top: 160px;
+    right: 80px;
+  }
+  
+  .letak-back{
+    position: relative;
+    top: 20px;
+  }
+  
+  .letak-garis{
+    top: 90px;
+  }
+  
+  .letak-topil{
+    position: relative;
+    top : 90px;
+  }
+  
+  .letak-header{
+    position: relative;
+    left: 200px;
+    top: 90px;
+  }
+  
+  .border-header{
+    width: 100px;
+    height: 10px;
+    border-top: 10px;
+    border-top-color: #993333;
+  }
+  
+  .bg-1{
+    background-color : #993333;
+    color : white;
+  }
+  
+  .box-gambar{
+    width: 290px;
+    height: 190px;
+    background: rgb(179, 175, 175);
+  }
+  
+  hr {
+    margin: 5px 0;
+  }
+  
+  hr.style1 {
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #993333, #993333, #993333);
+    background-image:    -moz-linear-gradient(left, #993333, #993333, #993333);
+    background-image:     -ms-linear-gradient(left, #993333, #993333, #993333);
+    background-image:      -o-linear-gradient(left, #993333, #993333, #993333);
+  }
+  
+  hr.style2 {
+    border: double white;
+    width: 2px;
+    height: 390px;
+    background-image: -webkit-linear-gradient(left, #993333, #993333, #993333);
+    background-image:    -moz-linear-gradient(left, #993333, #993333, #993333);
+    background-image:     -ms-linear-gradient(left, #993333, #993333, #993333);
+    background-image:      -o-linear-gradient(left, #993333, #993333, #993333);
+  }
+  
+  hr.style3 {
+    border: 0;
+    width: 3px;
+    height: 45px;
+    background-image: -webkit-linear-gradient(left, white, white, white);
+    background-image:    -moz-linear-gradient(left, white, white, white);
+    background-image:     -ms-linear-gradient(left, white, white, white);
+    background-image:      -o-linear-gradient(left, white, white, white);
+  }
+  
+  #footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;   /* tinggi dari footer */
+    line-height: 50px;
+    background:#993333;
+  }
+
+  #githubLink {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    color: #2D99FF;
+  }
+
+  #loadingMessage {
+    text-align: center;
+    padding: 40px;
+    background-color: #eee;
+  }
+
+  #canvas {
+    width: 100%;
+  }
+
+  #output {
+    margin-top: 20px;
+    background: #eee;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  #output div {
+    padding-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  #noQRFound {
+    text-align: center;
+  }  

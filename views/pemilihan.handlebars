@@ -1,0 +1,55 @@
+
+<!-- Header -->
+  <header class="py-1 bg-light">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <p class="lead" style="margin-left: 10%">Pemilihan Event Suara</p>
+        </div>
+        <button class="btn btn-lg button2" style="margin-right: 10px" onclick="myFunction(4)">Chart</button>
+    </nav>
+  </header>
+  
+  <div class="container">
+  <div class="row text-center row-eq-height" style="height: 15px">
+  </div>
+  <!-- Page Content -->
+  <div class="row text-center row-eq-height">
+	{{#each Calon_data}}
+    <script>
+		localStorage.setItem("nCalon",'{{../Calon_data.length}}')
+	</script>
+    <div class="col-lg-4 col-md-7 mb-5">
+      <div class="card" style="height: 100%">   
+        <div class="card-body">
+          <h3>Kandidat #{{this.NomorPasangan}}</h3>
+          <img height="226" class="card-img-top" src="http://localhost/SwaraQWeb/assets/images/{{this.Foto}}">
+          <p class="card-text">
+            <h4>{{this.NamaKetua}}
+              <h6>Calon Ketua</h6>
+            </h4>
+          </p>
+
+          <p class="card-text">
+            <h4>{{this.NamaWakil}}
+              <h6>Calon Wakil</h6>
+            </h4>
+          </p>
+        </div>
+        <div class="card-footer"  data-ajax="false" data-inset="true" data-theme="a">
+          <button class="btn btn-lg button2" onclick="Voting('{{this.NomorPasangan}}')">Pilih Kandidat</button>
+          <button class="btn btn-lg button2" onclick="window.location.href='Nomor={{this.NomorPasangan}}'">Lihat Profil</button>
+        </div>
+      </div>
+    </div>
+	{{/each}}
+</div>
+</div>
+
+<script>
+      function myFunction(i){
+        if (i == 1 ) window.location.href=("profile/Tampil-1.html")
+        else if (i == 2) window.location.href=("profile/Tampil-2.html")
+        else if (i == 3) window.location.href=("profile/Tampil-3.html")
+        else if (i == 4) window.location.href = "http://localhost:3000/EventID="+localStorage.getItem("EventID")+"/Chart";
+      }
+</script>
